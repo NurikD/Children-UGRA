@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дети Югры | Профиль</title>
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    
+
+</head>
+
+<body class="h-100">
+    <!--Шапка сайта-->
+    <nav>
+        <div class="d-flex justify-content-between px-5">
+            <img src="/images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+            <ul class="nav d-flex align-items-center">
+                <button type="button" class="btn btn-danger"
+                    style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: .80rem; --bs-btn-font-size: .85rem;"><a
+                        href="/login" style="color: white; text-decoration: none;">Выход</a></button>
+            </ul>
+        </div>
+    </nav>
+    <section style="margin-bottom: 250px;">
+        <div>
+        <div class="d-flex">
+            <div class="px-5" class="col">
+                <div >
+                    <div class="d-flex rounded text-white p-4"
+                    style="width: 400px; height: 150px; background-color: #A1CDB8;">
+                    <img src="/images/user.png" alt="">
+                    <div class="px-3">
+                        <h3 class="text-primary" id="name-surname">Имя Фамилия</h3>
+                        <p class="text-primary fs-5">АДМИНИСТРАТОР</p>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <div class="d-flex rounded bg-primary mt-3" style="width: 400px; height: 200px;">
+                        <ul class="list-unstyled my-auto ms-4" style="font-size: 28px;">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"> • Профиль</a>
+                            </li>
+                            <li>
+                                <a href="/child/certificates" class="text-white text-decoration-none">Организаторы</a>
+                            </li>
+                            <li>
+                                <a href="/child/certificates" class="text-white text-decoration-none">Мероприятия</a>
+                            </li>
+                            <li>
+                                <a href="/child/certificates" class="text-white text-decoration-none">Одаренности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div> 
+            <div class="px-5 w-100 text-center" class="col">
+                <h1 style="color: #0B450E;">ПОЛЬЗОВАТЕЛИ</h1>
+                <table class="w-100" style="border-collapse: separate; border-spacing: 0 20px;" >
+                    <thead>
+                        <tr class="text-primary fw-bold"></th>
+                            <td>ФАМИЛИЯ</td>
+                            <td>ИМЯ</td>
+                            <td>ОТЧЕСТВО</td>
+                            <td>ВОЗРАСТ</td>
+                            <td>ГОРОД ПРОЖИВАНИЯ</td>
+                            <td>ОБЛАСТЬ ОДАРЁННОСТИ</td>
+                            <td>МЕСТО УЧЕБЫ</td>
+                            <td>ТЕЛЕФОН</td>
+                            <td>ЭЛЕКТРОННАЯ ПОЧТА</td>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr class="text-primary fw-bold"></th>
+                            <td><input id="lastname" type="text" class="form-control" placeholder="Фамилия"></td>
+                            <td><input id="firstname" type="text" class="form-control" placeholder="Имя"></td>
+                            <td><input id="patronymic" type="text" class="form-control" placeholder="Отчество"></td>
+                            <td><div class="input-group my-3">
+                                <input id="ageFrom" class="form-control" type="number" placeholder="От" min="1" >
+                                <input id="ageTo" class="form-control"  type="number" placeholder="До" min="1" >
+                              </div></td>
+                            <td>
+                                <select required name="city_id" class="form-select" id="city-input">
+                                    <option>Выберите город</option>
+                                </select>
+                            </td>
+                            <td> 
+                                <select required name="talent_id" class="form-select" id="talent-input">
+                                    <option>Выберите одарённость</option>
+                                </select>
+                            </td>
+                            <td><input id="studyplace" type="text" class="form-control" placeholder="Обр. уч."></td>
+                            <td><input id="phone" type="text" class="form-control" placeholder="Номер телефона"></td>
+                            <td><input id="email" type="text" class="form-control" placeholder="example@mail.ru"></td>
+                        </tr>
+                    </thead>
+                    <tbody id="AnyThing" class="">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="mt-5" style="max-height: 260px;">
+        <div>
+            <div class="w-100 bg-primary"
+                style="height: fit-content; -webkit-mask-image: url(/images/green-footer.svg); -webkit-mask-size: cover; -webkit-mask-position: bottom;">
+                <div class="d-flex w-100 text-white p-5 justify-content-end">
+                    <div class="px-5">
+                        <p style="font-size: 25px;">Дети Югры в социальных сетях</p>
+                        <div class="mt-n1 d-flex justify-content-around " style="max-width: 250px;">
+                            <div>
+                                <img src="/images/vk.png" alt="" style="width: 50px; height: 50px;">
+                            </div>
+                            <div>
+                                <img src="/images/tg.png" alt="" width="47px" height="47px">
+                            </div>
+                            <div>
+                                <img src="/images/youtube.png" alt="" width="52px;" height="52px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5">
+                        <p style="font-size: 25px;">Для звонков по ХМАО</p>
+                        <h3>8(800)333-63-11</h3>
+                    </div>
+                    <div class="px-5">
+                        <p style="font-size: 25px;">Почта технической поддержки</p>
+                        <h3>zabota@rddm.team</h3>
+                    </div>
+                </div>
+                <div class="rounded mt-1" style="background-color: #116E42;">
+                    <div class="d-flex  w-100 text-white justify-content-end align-items-center">
+                        <div class="px-4">
+                            <p style="font-size: 25px;">ДЕТИ.ЮГРЫ</p>
+                        </div>
+                        <div class="px-4">
+                            <p style="font-size: 25px;">Правила использования</p>
+                        </div>
+                        <div class="px-4">
+                            <p style="font-size: 25px;">Политика конфиденциальности</p>
+                        </div>
+                        <div class="px-2">
+                            <img src="/images/kids.png" alt="" width="250px">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <img src="/images/footer-forest2.png" alt="" width="450px"
+                    style="margin-top: -500px; position: absolute; margin-left: 20px;">
+            </div>
+        </div>
+    </footer>
+<script src="/js/libs/jquery-3.7.1.min.js"></script>
+<script src="/js/admin.js"></script>
+
+</body>
+
+</html>

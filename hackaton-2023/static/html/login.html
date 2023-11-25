@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дети Югры | Вход</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card bg-white">
+              <div class="card-body p-5">
+                <form class="mb-3 needs-validation" id="login-form" novalidate>
+                  <div class="d-block mx-auto text-center">
+                    <img src="/images/logo.png" alt="logo"/>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label ">Эл. почта:</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label ">Пароль</label>
+                    <input type="password" class="form-control" id="password" placeholder="*******" required>
+                  </div>
+                  <div id="wrongpass" class="feedback text-danger" hidden>
+                    Неверный пароль
+                  </div>
+                  <p class="small"><a class="text-primary" href="forget-password.html">Забыли пароль?</a></p>
+                  <div class="d-grid">
+                    <button class="btn btn-primary" type="submit">Войти</button>
+                  </div>
+                </form>
+                <div>
+                  <p class="mb-0 text-center">Нет аккаунта? <a href="register-child" class="text-primary fw-bold">Регистрация</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/libs/jquery-3.7.1.min.js"></script>
+    <script src="/js/login.js"></script>
+
+  </body>
+</html>

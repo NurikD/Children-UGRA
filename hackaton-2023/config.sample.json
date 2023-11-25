@@ -1,0 +1,12 @@
+{
+  "server": {
+    
+  },
+  "database": {
+    "host": "localhost",
+    "user": "root",
+    "password": "casha228",
+    "database": "hackaton"
+  },
+
+}

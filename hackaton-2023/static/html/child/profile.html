@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дети Югры | Профиль</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/libs/jquery-3.7.1.min.js"></script>
+    <script src="/js/profile.js"></script>
+</head>
+
+<body>
+    <!--Шапка сайта-->
+    <nav>
+        <div class="d-flex justify-content-between px-5">
+            <img src="/images/logo.png" alt="Logo" class="d-inline-block align-text-top">
+            <ul class="nav d-flex align-items-center">
+                <button type="button" class="btn btn-danger"
+                    style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: .80rem; --bs-btn-font-size: .85rem;"
+                    onclick="exit()">Выход</button>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div>
+            <div class="d-flex ">
+                <div class="px-5">
+                    <div class="d-flex rounded text-white p-4"
+                        style="width: 400px; height: 150px; background-color: #A1CDB8;">
+                        <img src="/images/user.png" alt="">
+                        <div class="px-3">
+                            <h3 class="text-primary" id="name-surname">Имя Фамилия</h3>
+                            <p class="text-primary">Одарённость</p>
+                        </div>
+                    </div>
+                    <div class="d-flex rounded bg-primary mt-3" style="width: 400px; height: 200px;">
+                        <ul class="list-unstyled my-auto ms-4" style="font-size: 28px;">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none"> • Профиль</a>
+                            </li>
+                            <li>
+                                <a href="/child/certificates" class="text-white text-decoration-none">Мои грамоты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex container flex-column" style="margin-left: 25%; margin-top: -377px;">
+                <h1 class="d-flex position-absolute" style="color: #0B450E;">МОЙ ПРОФИЛЬ</h1>
+                <form class="mt-5" style="color: #0B450E;">
+                    <div class="d-flex">
+                        <div class="mt-1">
+                            <div class="mt-1 rounded-circle"
+                                style="width: 240px; height: 240px; background-color: #A1CDB8; margin-right: 70px; margin-bottom: 15px;">
+                                <img src="" alt=""><!--Картинка из БД-->
+                            </div>
+                            <button class="btn btn-primary d-flex" style="--bs-btn-disabled-bg: #e0e0e0;
+                            --bs-btn-disabled-border-color: #e0e0e0; --bs-btn-disabled-color: #0B450E; width: 240px; margin-bottom: 10px; height: 42px; font-weight: 600; padding-left: 60px; padding-right: 60px;
+                            " disabled>Изменить фото</button>
+                        </div>
+                        <div class="w-100">
+                            <div class="mb-3">
+                                <label for="surname" class="form-label">Фамилия</label>
+                                <input name="surname" class="form-control" id="surname" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Имя</label>
+                                <input name="name" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="patronymic" class="form-label">Отчество</label>
+                                <input name="patronymic" class="form-control" id="patronymic">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-100">
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Дата рождения</label>
+                                <input name="date" class="form-control" id="date" type="date" placeholder="01.01.2000">
+                            </div>
+                            <div class="mb-3">
+                                <label for="talent-select" class="form-label ">Город</label>
+                                <select required name="city_id" class="form-select" id="city-input">
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="placestudy" class="form-label">Место обучения</label>
+                                <input name="placestudy" class="form-control" id="placestudy">
+                            </div>
+                            <div class="mb-3">
+                                <label for="talent-select" class="form-label ">Вид одарённости</label>
+                                <select required name="talent_id" class="form-select" id="talent-input">
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Телефон</label>
+                                <input name="phone" class="form-control" id="phone" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary d-flex " disabled>Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5" style="max-height: 260px;">
+        <div>
+            <div class="w-100 bg-primary"
+                style="height: 270px; -webkit-mask-image: url(/images/green-footer.svg); -webkit-mask-size: cover; -webkit-mask-position: bottom;">
+                <div class="d-flex w-100 text-white p-5 justify-content-end">
+                    <div class="px-5">
+                        <p style="font-size: 25px;">Дети Югры в социальных сетях</p>
+                        <div class="mt-n1 d-flex justify-content-around " style="max-width: 250px;">
+                            <div>
+                                <img src="/images/vk.png" alt="" style="width: 50px; height: 50px;">
+                            </div>
+                            <div>
+                                <img src="/images/tg.png" alt="" width="47px" height="47px">
+                            </div>
+                            <div>
+                                <img src="/images/youtube.png" alt="" width="52px;" height="52px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-5">
+                        <p style="font-size: 25px;">Для звонков по ХМАО</p>
+                        <h3>8(800)333-63-11</h3>
+                    </div>
+                    <div class="px-5">
+                        <p style="font-size: 25px;">Почта технической поддержки</p>
+                        <h3>zabota@rddm.team</h3>
+                    </div>
+                </div>
+                <div class="rounded mt-1" style="background-color: #116E42;">
+                    <div class="d-flex  w-100 text-white justify-content-end align-items-center">
+                        <div class="px-4">
+                            <p style="font-size: 25px;">ДЕТИ.ЮГРЫ</p>
+                        </div>
+                        <div class="px-4">
+                            <p style="font-size: 25px;">Правила использования</p>
+                        </div>
+                        <div class="px-4">
+                            <p style="font-size: 25px;">Политика конфиденциальности</p>
+                        </div>
+                        <div class="px-2">
+                            <img src="/images/kids.png" alt="" width="250px">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <img src="/images/footer-forest2.png" alt="" width="450px"
+                    style="margin-top: -500px; position: absolute; margin-left: 20px;">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

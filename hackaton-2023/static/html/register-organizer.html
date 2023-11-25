@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дети Югры | Регистрация</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card bg-white">
+              <div class="card-body px-5 py-4">
+                <form class="mb-2 needs-validation" id="registration-form" method="post" novalidate>
+                  <div class="d-block mx-auto text-center">
+                    <img src="/images/logo.png" alt="logo"/>
+                    <h3 class="text-danger">Организатор</h3>
+                  </div>
+                    <input name="role" value="organizer" hidden>
+                    <div class="mb-2">
+                      <label for="email" class="form-label ">Эл. почта</label>
+                      <input required name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-2">
+                      <label for="password" class="form-label ">Пароль</label>
+                      <input required name="password" type="password" class="form-control" id="password" minlength="6" placeholder="*******"/>
+                    </div>
+                    <div class="input-group my-3">
+                      <span class="input-group-text">ФИО</span>
+                      <input required name="name" class="form-control"  type="text" placeholder="Фамилия">
+                      <input required name="surname"  class="form-control" type="text" placeholder="Имя">
+                      <input required name="patronomic" class="form-control"  type="text" placeholder="Отчество">
+                    </div>
+                    <div class="mb-2">
+                      <label for="birthdate" class="form-label ">Дата рождения</label>
+                      <input required name="birth_date" type="date" class="form-control" id="birthdate">
+                    </div>
+                    <div class="mb-2">
+                      <label for="talent-select" class="form-label ">Город</label>
+                      <select required name="city_id" class="form-select" id="city-input">
+                      </select>
+                    </div>
+                    <div class="mb-2">
+                      <label for="organization" class="form-label ">Место работы</label>
+                      <input required name="organization" type class="form-control" id="organization">
+                    </div>
+                    <div class="mb-2">
+                      <label for="specialty" class="form-label ">Специальность</label>
+                      <input required name="specialty" type class="form-control" id="specialty">
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label ">Телефон</label>
+                      <input required name="phone" class="form-control" id="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                    </div>
+                    <div class="d-grid">
+                      <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+                <div>
+                  <p class="mb-0 text-center">Уже зарегистрированы? <a href="login.html" class="text-primary fw-bold">Вход</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/libs/jquery-3.7.1.min.js"></script>
+    <script src="/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="/js/register.js"></script>
+  </body>
+</html>

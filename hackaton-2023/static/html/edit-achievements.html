@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дети Югры | Вход</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card bg-white" style="width: 800px;">
+                        <div class="card-body p-5" >
+                            <form class="mb-3 needs-validation" id="create-talent" novalidate>
+                                <div class="d-block mx-auto text-center">
+                                    <img src="/images/logo.png" alt="logo" />
+                                </div>
+                                <h3 class="text-primary d-flex justify-content-center">РЕДАКТИРОВАНИЕ ИНФОРМАЦИИ</h3>
+                                <div class="d-flex">
+                                    <div>
+                                        <div class="mt-1 rounded"
+                                            style="width: 250px; height: 300px; background-color: #A1CDB8; margin-right: 100px;">
+                                            <img src="" alt=""><!--Картинка из БД-->   
+                                        </div>
+                                        <button class="btn btn-primary mt-3 w-100" type="submit" style="max-width: 250px;">Изменить фото</button>
+                                    </div>
+                                    <div class="container">
+                                        <div class="mb-3">
+                                            <label for="NameInput" class="form-label ">Название</label>
+                                            <input type="text" class="form-control" id="NameInput" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="PlaceInput" class="form-label ">Место</label>
+                                            <input type="text" class="form-control" id="PlaceInput" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="GetDateInput" class="form-label ">Год получения</label>
+                                            <input type="text" class="form-control" id="GetDateInput" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="RecipientInput" class="form-label ">Получатель</label>
+                                            <input type="text" class="form-control" id="RecipientInput" required>
+                                        </div>
+                                        <div class="d-grid gap-3">
+                                            <button class="btn btn-danger" type="submit">Отменить</button>
+                                            <button class="btn btn-primary" type="submit">Сохранить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/js/libs/jquery-3.7.1.min.js"></script>
+    <script src="/js/login.js"></script>
+
+</body>
+
+</html>
